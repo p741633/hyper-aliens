@@ -16,7 +16,7 @@ const magenta = '#ff6ac1';
 const cyan = '#9aedfe';
 const white = '#f1f1f0';
 const lightBlack = '#b9b9b9';
-const selectionColor = 'rgba(151, 151, 155, 0.6)';
+const selectionColor = 'rgba(151, 151, 155, 0.3)';
 
 let imagePath = path.join(path.resolve(__dirname, 'backgrounds'), 'aliens.png');
 imagePath = imagePath.replace(/\\/g, '/');
