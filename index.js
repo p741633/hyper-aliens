@@ -5,7 +5,7 @@ const path = require('path');
 const transparent = 'rgba(0, 0, 0, 0)';
 const mainColor = '#171924';
 const backgroundColor = '#282a36';
-const foregroundColor = '#eff0eb';
+const foregroundColor = '#dcddd9';
 const borderColor = '#222430';
 const cursorColor = '#97979b';
 const selectionColor = 'rgba(151, 151, 155, 0.3)';
@@ -19,7 +19,7 @@ const magenta = '#ff2d55';
 const cyan = '#5ac8fa';
 const white = '#bfbfbf';
 
-const lightBlack = '#b9b9b9';
+const lightBlack = '#8d8c8c';
 
 const imagePath = path
   .join(path.resolve(__dirname, 'backgrounds'), 'aliens.png')
