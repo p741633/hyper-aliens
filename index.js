@@ -8,18 +8,22 @@ const backgroundColor = '#282a36';
 const foregroundColor = '#eff0eb';
 const borderColor = '#222430';
 const cursorColor = '#97979b';
-const red = '#ff5c57';
-const green = '#5af78e';
-const yellow = '#f3f99d';
-const blue = '#57c7ff';
-const magenta = '#ff6ac1';
-const cyan = '#9aedfe';
-const white = '#f1f1f0';
-const lightBlack = '#b9b9b9';
 const selectionColor = 'rgba(151, 151, 155, 0.3)';
+const highlightLine = 'rgba(0, 120, 0, 0.6)';
 
-let imagePath = path.join(path.resolve(__dirname, 'backgrounds'), 'aliens.png');
-imagePath = imagePath.replace(/\\/g, '/');
+const red = '#ff3B30';
+const green = '#4cd964';
+const yellow = '#ffcc00';
+const blue = '#0095ff';
+const magenta = '#ff2d55';
+const cyan = '#5ac8fa';
+const white = '#bfbfbf';
+
+const lightBlack = '#b9b9b9';
+
+const imagePath = path
+  .join(path.resolve(__dirname, 'backgrounds'), 'aliens.png')
+  .replace(/\\/g, '/');
 
 exports.decorateConfig = (config) =>
   Object.assign({}, config, {
@@ -61,14 +65,9 @@ exports.decorateConfig = (config) =>
       background-size: cover;
     }
 
-		/* Hide title when only one tab */
-		.tabs_title {
-			display: none !important;
-		}
-
     /* Title colors */
     .tab_tab {
-			color: #ffffff !important;
+			color: #bfbfbf !important;
 		}
 
 		/* Add a highlight line below the active tab */
@@ -78,14 +77,14 @@ exports.decorateConfig = (config) =>
 			bottom: 0;
 			left: 0;
 			right: 0;
-			height: 2px;
-			background-color: rgba(0, 120, 0, 0.6);
+			height: 3px;
+			background-color: ${highlightLine};
 			transform: scaleX(0);
 			will-change: transform;
 		}
 		.tab_tab.tab_active::before {
 			transform: scaleX(1);
-			transition: all 200ms cubic-bezier(0, 0, 0.2, 1);
+			transition: all 300ms cubic-bezier(0, 0, 0.2, 1);
 		}
 
 		/* Fade the title of inactive tabs and the content of inactive panes */
