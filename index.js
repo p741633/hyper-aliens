@@ -17,9 +17,9 @@ const yellow = '#ffcc00';
 const blue = '#0095ff';
 const magenta = '#ff2d55';
 const cyan = '#5ac8fa';
-const white = '#bfbfbf';
+const white = '#d5d5d5';
 
-const lightBlack = '#8d8c8c';
+const lightBlack = '#bbb0b0';
 
 const imagePath = path
   .join(path.resolve(__dirname, 'backgrounds'), 'aliens.png')
